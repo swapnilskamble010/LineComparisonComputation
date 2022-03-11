@@ -30,12 +30,15 @@ public class Line_Comparison {
 		double length2 = Math.sqrt((x4-x3)*(x4-x3) + (y4-y3)*(y4-y3));
 		System.out.println("Length of line2 = " + Math.round(length2*100.0)/100.0);
 		
-		//checking equality of lines
-		if (length1 == length2) {
-			System.out.println("Length of lines are equal");
+		//comparison of lines
+		if (length1 > length2) {
+			System.out.println("Length of line1 is greater than Length of line2");
+		}
+		else if (length1 < length2) {
+			System.out.println("Length of line1 is less than Length of line2");
 		}
 		else {
-			System.out.println("Length of lines are not equal");
+			System.out.println("Length of line1 is equal to Length of line2");	
 		}
 			
 
